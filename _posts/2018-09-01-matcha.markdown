@@ -56,7 +56,7 @@ Basé sur le micro-framework slim3, ceci est un site de rencontres sur le theme 
 
 | categorie | bibliotheque/api |
 | :---: | :--- |
-| websocket | [ratchet(php)](http://socketo.me/) avec [zeroMQ](http://zeromq.org/) |
+| websocket | [Ratchet](http://socketo.me/) avec [zeroMQ](http://zeromq.org/) |
 | geolocalisation | [geoip2](https://www.maxmind.com/fr/geoip-demo) |
 | map | API Google Maps |
 | faker | [fzaninotto/faker](https://github.com/fzaninotto/Faker) |
