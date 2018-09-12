@@ -20,12 +20,17 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://jgroc-de.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  jgroc-de
+linkedin_username: 
+
+#google analytics
+google_analytics: UA-NNNNNNNN-N
 
 # Build settings
 markdown: kramdown
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag"
 show_excerpts: true
 
 # Exclude from processing.
