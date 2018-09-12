@@ -24,7 +24,7 @@ site: show_excerpts
         </h3>
         <div style="display:grid;grid-column-gap: 50px;grid-template-columns: auto auto;">
         {%- if post.img -%}
-        <img src="{{ post.img }}" style="width:150px;max-height:250px"></img>
+        <img src="{{ post.img }}" alt="{{ post.img }}" style="width:150px;max-height:250px">
         {%- endif -%}
         <div>
         {%- if site.show_excerpts -%}
