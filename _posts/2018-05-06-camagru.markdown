@@ -4,6 +4,7 @@ title:  "Premier projet: Camagru!"
 date:   2018-05-06 20:00:42 +0200
 categories: website
 excerpt_separator: <!--more-->
+img: /assets/camagru2.png
 ---
 ## Description:
 
