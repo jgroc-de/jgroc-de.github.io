@@ -7,7 +7,7 @@ excerpt_separator: <!--more-->
 ---
 ## Description
 
-Basé sur un micro-framework, ceci est un site de rencontres. Les interactions entre utilisateurs sont au coeur du projet !
+Basé sur le micro-framework slim3, ceci est un site de rencontres sur le theme rick&morty. Les interactions entre utilisateurs sont au coeur du projet !
 <!--more-->
 
 ![screenshot](/assets/matcha1.png)
@@ -50,7 +50,7 @@ Basé sur un micro-framework, ceci est un site de rencontres. Les interactions e
 | | Back-end | Front-end | bdd |
 | :---: | :--- | :--- | :--- |
 | langage | PHP | HTML, CSS, JS | MySQL |
-| framework | **Slim3** | twig, w3.css, VanillaJS ||
+| framework | [Slim3](https://www.slimframework.com/) | [twig](https://twig.symfony.com/), [w3.css](https://www.w3schools.com/w3css/), [VanillaJS](http://vanilla-js.com/) ||
 
 ## Librairies:
 
