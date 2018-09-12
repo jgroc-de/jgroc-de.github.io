@@ -1,0 +1,66 @@
+---
+layout: post
+title:  "Premier projet: Camagru!"
+date:   2018-05-06 20:00:42 +0200
+categories: website
+excerpt_separator: <!--more-->
+---
+## Description:
+
+Réalisé en PHP, petit site Instagram-like permettant à des utilisateurs de réaliser et partager des photo-montages, le tout, sans framework.
+<!--more-->
+
+## lien
+
+- [site camagru sur free](http://jgroc2s.free.fr/)
+- [code final sur github](https://github.com/jgroc-de/camagru)
+L'envoi de mails a été désactivé: votre compte sera donc activé même si votre adresse mail est bidon (ce que j'encourage ici). Attention, la génération de photo peut être assez lente…
+![screenshot](/assets/camagru2.png)
+
+## features
+
+- enregistrer un nouveau compte
+- activation du compte par mail
+- réinitialisation du mot de passe par mail
+- modifier mot de passe et pseudo
+- mise à disposition sur la page d'acceuil de toutes les photos de tous les utilisateurs
+- chaque photo est like-able et commentable. Le propriétaire peut modifier le titre (en cliquant sur le titre dans la page de la photo: UX = 0/10 xD)
+- prendre des photos par webcam ou en uploadant une image (png uniquement)
+- poser des filtres sur les photos, une preview du résultat est visible
+- supprimer ses propres photos (page /b/, en cliquant sur une photo)
+
+## Objectif pédagogique:
+
+- Gestion utilisateurs
+- Gestion permissions
+- Mailing
+- Sécurité / Validation de données
+- webcam
+
+## Langages:
+
+| Back-end | Front-end | bdd |
+|---|---|---|
+| PHP | HTML5, CSS3, JS | MySQL |
+
+## Contraintes techniques:
+
+Pas de framework;
+
+![screenshot](/assets/camagru1.png)
+
+## Utilisation
+
+Pour lancer ce site, il vous faut un service/server mysql actif, et php 5.4 ou supérieur.
+
+- dans un terminal, entrer:
+> git clone https://github.com/jgroc-de/camagru.git && cd camagru
+- dans le dossier camagru tout juste créé, aller dans config/database.php et modifier le mot de passe pour permettre l'acces à votre base de donnée mysql (et éventuellement le nom d'utilisateur si vous n'etes pas "root")
+- placer vous à la racine du dossier 'camagru' et entrez la commande 
+> php -S localhost:8080
+- un serveur est maintenant lancé premettant d'acceder au site.
+- initialiser la base de donnée en entrant dans votre navigateur internet (firefox/chrome/safari) l'adresse:
+> localhost:8080/config/setup.php
+- le site est désormais opérationnel et accessible à l'adresse "localhost:8080/". faites chauffer votre webcam!
+
+![screenshot](/assets/camagru0.png)
