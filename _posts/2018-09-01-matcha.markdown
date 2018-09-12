@@ -56,7 +56,7 @@ Basé sur un micro-framework, ceci est un site de rencontres. Les interactions e
 
 | categorie | bibliotheque/api |
 | :---: | :--- |
-| websocket | [ratchet(php)](http://socketo.me/) |
+| websocket | [ratchet(php)](http://socketo.me/) avec [zeroMQ](http://zeromq.org/) |
 | geolocalisation | [geoip2](https://www.maxmind.com/fr/geoip-demo) |
 | map | API Google Maps |
 | faker | [fzaninotto/faker](https://github.com/fzaninotto/Faker) |
