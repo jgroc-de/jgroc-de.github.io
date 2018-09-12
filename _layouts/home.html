@@ -22,9 +22,9 @@ site: show_excerpts
             {{ post.title | escape }}
           </a>
         </h3>
-        <div style="display:grid;grid-column-gap: 50px;grid-template-columns: auto auto;">
+        <div class="gg-grid">
         {%- if post.img -%}
-        <img src="{{ post.img }}" alt="{{ post.img }}" style="width:150px;max-height:250px">
+        <img src="{{ post.img }}" alt="{{ post.img }}" class="gg-img">
         {%- endif -%}
         <div>
         {%- if site.show_excerpts -%}
