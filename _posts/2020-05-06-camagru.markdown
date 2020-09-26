@@ -9,6 +9,7 @@ img: /assets/camagruV2_0.png
 ---
 
 Réalisé en PHP/JS brut , petit site Instagram-like permettant à des utilisateurs de réaliser et partager des photo-montages.
+Il me sert de bac à sable pour des tests d'implémentation de design pattern et de frameworks maisons.
 
 <!--more-->
 
