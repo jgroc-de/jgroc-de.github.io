@@ -5,7 +5,7 @@ title2: "tout à la main"
 date: 2018-05-06 20:00:42 +0200
 categories: website
 excerpt_separator: <!--more-->
-img: /assets/camagru2.png
+img: /assets/camagruV2_0.png
 ---
 
 Réalisé en PHP/JS brut , petit site Instagram-like permettant à des utilisateurs de réaliser et partager des photo-montages.
