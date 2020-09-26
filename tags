@@ -1,0 +1,18 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+w3_close	_layouts/default.html	/^        function w3_close() {$/;"	f
+w3_close	_site/404.html	/^        function w3_close() {$/;"	f
+w3_close	_site/index.html	/^        function w3_close() {$/;"	f
+w3_close	_site/website/2018/05/06/camagru.html	/^        function w3_close() {$/;"	f
+w3_close	_site/website/2020/06/07/matcha.html	/^        function w3_close() {$/;"	f
+w3_close	_site/website/2020/09/25/windmusic-tools.html	/^        function w3_close() {$/;"	f
+w3_open	_layouts/default.html	/^        function w3_open() {$/;"	f
+w3_open	_site/404.html	/^        function w3_open() {$/;"	f
+w3_open	_site/index.html	/^        function w3_open() {$/;"	f
+w3_open	_site/website/2018/05/06/camagru.html	/^        function w3_open() {$/;"	f
+w3_open	_site/website/2020/06/07/matcha.html	/^        function w3_open() {$/;"	f
+w3_open	_site/website/2020/09/25/windmusic-tools.html	/^        function w3_open() {$/;"	f
