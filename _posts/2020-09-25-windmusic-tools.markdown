@@ -10,7 +10,7 @@ img: /assets/matcha1.png
 
 A la base, juste une mini appli pour connaitre la vitesse d'un rythme, elle évolue peu à peu vers un set complet d'outils pour le travail journalier des musiciens.
 
-<!-- more -->
+<!--more-->
 
 ## lien
 
