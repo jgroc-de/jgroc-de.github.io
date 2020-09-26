@@ -3,7 +3,6 @@ layout: post
 title: "Camagru"
 title2: "le bac à sable"
 date: 2018-05-06 20:00:42 +0200
-categories: website
 excerpt_separator: <!--more-->
 img: /assets/camagruV2_0.png
 ---
