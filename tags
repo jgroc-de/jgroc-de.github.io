@@ -8,11 +8,9 @@ w3_close	_layouts/default.html	/^        function w3_close() {$/;"	f
 w3_close	_site/404.html	/^        function w3_close() {$/;"	f
 w3_close	_site/index.html	/^        function w3_close() {$/;"	f
 w3_close	_site/website/2018/05/06/camagru.html	/^        function w3_close() {$/;"	f
-w3_close	_site/website/2020/06/07/matcha.html	/^        function w3_close() {$/;"	f
 w3_close	_site/website/2020/09/25/windmusic-tools.html	/^        function w3_close() {$/;"	f
 w3_open	_layouts/default.html	/^        function w3_open() {$/;"	f
 w3_open	_site/404.html	/^        function w3_open() {$/;"	f
 w3_open	_site/index.html	/^        function w3_open() {$/;"	f
 w3_open	_site/website/2018/05/06/camagru.html	/^        function w3_open() {$/;"	f
-w3_open	_site/website/2020/06/07/matcha.html	/^        function w3_open() {$/;"	f
 w3_open	_site/website/2020/09/25/windmusic-tools.html	/^        function w3_open() {$/;"	f
