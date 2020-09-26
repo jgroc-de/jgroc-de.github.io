@@ -16,20 +16,8 @@ Réalisé en PHP/JS brut , petit site Instagram-like permettant à des utilisate
 
 - [site camagru sur heroku](https://camagru42.herokuapp.com/#) (c'est lent à charger, c'est normal, c'est heroku)
 - [code final sur github](https://github.com/jgroc-de/camagru)
-  L'envoi de mails a été désactivé: votre compte sera donc activé même si votre adresse mail est bidon (ce que j'encourage ici). Attention, la génération de photo peut être assez lente…
-  ![screenshot](/assets/camagru2.png)
 
-## features
-
-- enregistrer un nouveau compte
-- activation du compte par mail
-- réinitialisation du mot de passe par mail
-- modifier mot de passe et pseudo
-- mise à disposition sur la page d'acceuil de toutes les photos de tous les utilisateurs
-- chaque photo est like-able et commentable. Le propriétaire peut modifier le titre (en cliquant sur le titre dans la page de la photo: UX = 0/10 xD)
-- prendre des photos par webcam ou en uploadant une image (png uniquement)
-- poser des filtres sur les photos, une preview du résultat est visible, on peut bouger les filtres
-- supprimer ses propres photos (page /b/, en cliquant sur une photo)
+  ![screenshot](/assets/camagruV2_0.png)
 
 ## Objectif pédagogique:
 
@@ -37,32 +25,95 @@ Réalisé en PHP/JS brut , petit site Instagram-like permettant à des utilisate
 - Gestion permissions
 - Mailing
 - Sécurité / Validation de données
-- webcam
 
 ## Langages:
 
-| Back-end | Front-end     | bdd   |
-| -------- | ------------- | ----- |
-| PHP      | HTML, CSS, JS | MySQL |
+| Back-end | Front-end                         | bdd       |
+| -------- | --------------------------------- | --------- |
+| PHP 7.2  | HTML5, CSS3 (w3-css), _VanillaJS_ | MySQL 5.7 |
 
 ## Contraintes techniques:
 
-Pas de framework. A la place, il y a une tentative de framework coté back (pattern MVC) et coté front (pattern yolo xD).
+Pas de framework; Du coup framework MVC maison!
 
-![screenshot](/assets/camagru1.png)
+```php
+<?= 'Hello Worldl!' ?>
+```
 
-## Utilisation
+## Installation
 
-Pour lancer ce site, il vous faut un service/server mysql actif, et php 5.4 ou supérieur.
+PHP 7.0 ou supérier est nécessaire pour faire fonctionner ce site.
+Pour installer le projet:
 
-- dans un terminal, entrer:
-  > git clone https://github.com/jgroc-de/camagru.git && cd camagru
-- dans le dossier camagru tout juste créé, aller dans config/database.php et modifier le mot de passe pour permettre l'acces à votre base de donnée mysql (et éventuellement le nom d'utilisateur si vous n'etes pas "root")
-- placer vous à la racine du dossier 'camagru' et entrez la commande
-  > php -S localhost:8080
-- un serveur est maintenant lancé premettant d'acceder au site.
-- initialiser la base de donnée en entrant dans votre navigateur internet (firefox/chrome/safari) l'adresse:
-  > localhost:8080/config/setup.php
-- le site est désormais opérationnel et accessible à l'adresse "localhost:8080/". faites chauffer votre webcam!
+```
+git clone git@github.com:jgroc-de/camagru.git && composer install
+php -S localhost:8080
+```
 
-![screenshot](/assets/camagru0.png)
+composer ne fut pas absolument utile fut un temps
+
+le site est désormais accessible à l'adresse "localhost:8080/" dans votre navigateur
+
+Pour faire fonctionner le site, il faut aussi une base mysql active et entrer les identifiants dans App/container.php
+initialiser la base de donnée en entrant l'adresse "localhost:8080/config/setup.php" dans votre navigateur internet
+
+![screenshot](/assets/camagruV2_1.png)
+
+## details technique
+
+### PHP
+
+Le site utilise une sorte de microframework php naif pour fonctionner.
+Le code de celui-ci se trouve dans le dossier Dumb.
+Il est composé de septs fichiers:
+
+- dumb.php qui est le corps du framework
+- patronus.php qui est le controller parent (donc les autres controllers héritent. En théorie, la composition, c'est mieux en objet mais bon…)
+- BakaDo.php (en japonais), le router
+- IronWall.php, le gestionnaire de middleware
+- KGB.php, le gestionnaire de validation de formulaire
+- shell.php, la troisieme couche fourre tout de middleware
+- response.php, une esquisse d'objet response
+
+Ce framework permet de definir:
+
+- un middleware dans app/config/middleware.php
+- un validateur de formulaire dans app/config/form.php
+- une troisieme couche de securité dans app/config/ghost.php
+- les routes possibles dans app/config/routes.php (avec de l'url rewriting tres basique)
+- un systeme de container dans app/container.php
+
+le point d'entrée se trouve de manière classique dans index.php
+enfin, une organisation pseudo REST est proposée avec l'utilisation des verbs HTTP comme methodes des controller.
+le site est ainsi une sorte d'api qui livre le front sur la route /.
+le front se charge ensuite de remplir le site en tapant sur les autres routes.
+
+### JS
+
+Le front est à peu pret tout en JS, avec la navigation gérée par le changement de hash (visible par le '#' dans l'adresse).
+Dans le dossier public/js, vous trouverez app.js qui est le point d'entrée
+et qui charge:
+
+- app/anGGular.js, la class initiale qui charge les modules de bases
+- app/router.js, le router, chargé de définir la route
+- middleware.js, le middleware.js qui sert nottamment à rediriger vers la page login les pages nécessitant d'etre idetifié sur le site
+- app/container.js, qui sert à construire le controller qui va bien en fonction de la route demandée
+- AnGGular/controller.js, qui est donc le squellette de controller dont tout le monde dépend
+
+Contrairement à la partie PHP, ce n'est pas une structure MVC. Nous avons ici un seul controller dont les parametres sont, en résumé:
+
+- une classe event qui gére les events de la page (ou l'élément) visionnée
+- une classe behavior, qui vient gérer la maniere dont l'élément réagit visiblement parlant en général
+  La logique n'est pas totalement finalisée au sens ou behavior fait un peu doublon avec event et les classes du dossier events pourraient etre refactorisée (pas mal de code dupliqué dans ce dossier)
+
+Cela reste une tentative instructive de mon point de vue.
+
+## evolution en cours
+
+- en faire une pwa
+
+## evolution possible
+
+- faire du js propre (trollolol)
+
+![screenshot](/assets/camagruV2_2.png)
