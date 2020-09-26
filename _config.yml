@@ -17,12 +17,15 @@ author: jgroc-de
 title: jgroc-de projets web
 email: jgroc-de@student.42.fr
 description: >- # this means to ignore newlines until "baseurl:"
-    Vous trouverez ici la description de mes différents projets web réalisé à 42 ainsi que des liens vers les sites en questions.
+  Vous trouverez ici la description de mes différents projets web réalisé à 42 ainsi que des liens vers les sites en questions.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://jgroc-de.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
-github_username:  jgroc-de
+github_username: jgroc-de
 linkedin_username: jérôme-groc-de-salmiech-9a56b915
 linkedin_username_alias: jgroc-de
+github_link: https://github.com/jgroc-de
+linkedin_link: https://www.linkedin.com/in/j%C3%A9r%C3%B4me-groc-de-salmiech-9a56b91
+avatar: https://avatars2.githubusercontent.com/u/32433125?s=400&u=5a3ded5fa3f408db992641e550172dd433c15250&v=4
 
 #google analytics
 google_analytics: UA-120607595-2
@@ -34,7 +37,6 @@ plugins:
   - jekyll-feed
     #  - jekyll-seo-tag"
 show_excerpts: true
-
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.

@@ -3,39 +3,22 @@ layout: default
 site: show_excerpts
 ---
 
-<div class="home">
-  {%- if page.title -%}
-    <h1 class="page-heading">{{ page.title }}</h1>
-  {%- endif -%}
+{%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+{%- if site.posts.size > 0 -%}
+<div class="w3-row-padding">
+  {%- for post in site.posts -%}
+  <a href="{{ post.url | relative_url }}">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <div style="background-image:url('{{ post.img }}');" class="w3-hover-opacity gg-post-img"></div>
 
-  {{ content }}
-
-  {%- if site.posts.size > 0 -%}
-    <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
-    <ul class="post-list">
-      {%- for post in site.posts -%}
-      <li>
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
-        <h3>
-          <a class="post-link" href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
-          </a>
-        </h3>
-        <div class="gg-grid">
-        {%- if post.img -%}
-        <img src="{{ post.img }}" alt="{{ post.img }}" class="gg-img">
-        {%- endif -%}
-        <div>
-        {%- if site.show_excerpts -%}
-          {{ post.excerpt }}
-        {%- endif -%}
-        </div>
-        </div>
-      </li>
-      {%- endfor -%}
-    </ul>
-
-  {%- endif -%}
-
+      <div class="w3-container w3-white w3-hover-teal">
+        <h2><strong>{{ post.title | escape }}</strong></h2>
+        <h3>{{ post.title2 }}</h3>
+        <p>{{ post.excerpt }}</p>
+        <p style="text-align: right;">{{ post.date | date: "%-d %B %Y" }}</p>
+      </div>
+    </div>
+  </a>
+  {%- endfor -%}
 </div>
+{%- endif -%}
