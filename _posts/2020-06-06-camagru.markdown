@@ -105,6 +105,7 @@ Dans le dossier hooks, on trouve des hooks pour git pour tester le back au momen
 - rework patterns
 
 ### back
+- rajouter des objets images etc, et un ORM tant qu'a faire
 - systeme de logger respectant psr
 
 ![screenshot](/assets/camagruV2_2.png)
