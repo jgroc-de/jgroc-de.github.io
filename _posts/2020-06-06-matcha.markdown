@@ -16,7 +16,8 @@ Basé sur le micro-framework PHP slim3, ceci est un site assez complet de type s
 
 ## lien
 
-- [site matcha](https://matcha2.herokuapp.com). PS: vous pouvez vous inscrire avec un mail bidon.
+- [site matcha](https://matcha2.herokuapp.com). (le premier chargement est lent (>15s) pour la création de l'instance heroku)
+PS: vous pouvez vous inscrire avec un mail bidon.
 - [code final sur github](https://github.com/jgroc-de/matcha)
 
 
