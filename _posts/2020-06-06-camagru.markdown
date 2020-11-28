@@ -15,7 +15,7 @@ Il me sert de bac à sable pour des tests d'implémentation de design pattern et
 
 ## lien
 
-- [site camagru sur heroku](https://camagru42.herokuapp.com/#) (c'est lent à charger, c'est normal, c'est heroku)
+- [site camagru sur heroku](https://camagru42.herokuapp.com/#) (le premier chargement est lent, le temps que l'instance heroku se lance)
 - [code final sur github](https://github.com/jgroc-de/camagru)
 
   ![screenshot](/assets/camagruV2_0.png)

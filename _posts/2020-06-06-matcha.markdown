@@ -16,20 +16,20 @@ Basé sur le micro-framework PHP slim3, ceci est un site assez complet de type s
 
 ## lien
 
-- [site matcha](https://matcha2.herokuapp.com)
+- [site matcha](https://matcha2.herokuapp.com). PS: vous pouvez vous inscrire avec un mail bidon.
 - [code final sur github](https://github.com/jgroc-de/matcha)
-- L'envoi de mails a été désactivé: votre compte sera donc activé même si votre adresse mail est bidon (ce que j'encourage ici).
+
 
 ## features
 
 - page de login/signup/reset password
 - page de profil pour chaque utilisateur. Sur sa propre page, on peut ajouter tag/photos et modifier sa localisation. Celle-ci est illustrée via l'api google map
 - page de recherche permettant soit de browser une sélection de profils (sélectionner par date de connection, distance à vous, tag en commun, popularité), soit defaire des recherches par nom ou critères.
-- page de chat permettant de chatter avec ses amis uniquement
+- (non fonctionnel sur heroku à cause des limitations de bibliotheques) page de chat permettant de chatter avec ses amis uniquement
 - page de configuration: modification des données personnelles, mot de passe, demande des données stockées en base de donnée et suppression deprofil
 - page de logout
 - page de contact
-- système de websocket pour délivrer des notifications quand:
+- (non fonctionnel sur heroku) système de websocket pour délivrer des notifications quand:
   - un autre utilisateur regarde votre profil
   - un uilisateur fait ou accepte une demande d'amitié
   - un utilisateur consulté est en ligne
@@ -71,3 +71,4 @@ Basé sur le micro-framework PHP slim3, ceci est un site assez complet de type s
 - validateur de données
 - gestion de comptes utilisateurs
 - gestion de votre base de données
+- socket.io pour les websockets
