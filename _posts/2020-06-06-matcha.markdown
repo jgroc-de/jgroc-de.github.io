@@ -71,4 +71,7 @@ Basé sur le micro-framework PHP slim3, ceci est un site assez complet de type s
 - validateur de données
 - gestion de comptes utilisateurs
 - gestion de votre base de données
+
+## Améliorations à faire
+
 - socket.io pour les websockets
